@@ -1,0 +1,325 @@
+<html>
+<body bgcolor="pink">
+<form name="booking">
+
+<table border=1 width="100%">
+<tr>
+		<td>
+		<table align="center">
+			<tr>
+				<td align="center" colspan=7><font face="Andalus" size=4>Domestic Flight</font></td>
+				
+			</tr>
+			<tr>
+                            <td>Type of Journey</td>
+				<td>:</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="tj">One Way</td>
+				<td><input type="radio" name="tj">Return</td>
+			</tr>
+			<tr>
+                            <td>Departure City</td>
+				<td>:</td>
+				<td></td>
+				<td></td>
+				<td>Departure date</td>
+				<td>:</td>
+				
+				
+			</tr>
+			<tr>
+				<td></td>
+				
+				<td><select name="dc">
+				<option>Please Select</option>
+				<option>Aceh</option>
+				<option>Ambon</option>
+				<option>Balik Papan</option>
+				<option>Bandung</option>
+				<option>Denpasar</option>
+				<option>Jakarta</option>
+				<option>Jayapura</option>
+				<option>Makasar</option>
+				<option>Menado</option>
+				<option>Medan</option>
+				<option>Semarang</option>
+				<option>Surabaya</option>
+				<option>Sumbawa</option>
+				</select></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><select name="dd">
+				<option>Please Select</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+				<option>13</option>
+				<option>14</option>
+				<option>15</option>
+				<option>16</option>
+				<option>17</option>
+				<option>18</option>
+				<option>19</option>
+				<option>20</option>
+				<option>21</option>
+				<option>22</option>
+				<option>23</option>
+				<option>24</option>
+				<option>25</option>
+				<option>26</option>
+				<option>27</option>
+				<option>28</option>
+				<option>29</option>
+				<option>30</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Arrival City</td>
+				<td>:</td>
+				<td></td>
+				<td></td>
+				<td>Return Date</td>
+				<td>:</td>
+				
+			</tr>
+			<tr>
+				<td></td>
+				<td><select name="ac">
+				<option>Please Select</option>
+				<option>Aceh</option>
+				<option>Ambon</option>
+				<option>Balik Papan</option>
+				<option>Bandung</option>
+				<option>Denpasar</option>
+				<option>Jakarta</option>
+				<option>Jayapura</option>
+				<option>Makasar</option>
+				<option>Menado</option>
+				<option>Medan</option>
+				<option>Semarang</option>
+				<option>Surabaya</option>
+				<option>Sumbawa</option>
+				</select></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><select name="rd">
+				<option>Please Select</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+				<option>13</option>
+				<option>14</option>
+				<option>15</option>
+				<option>16</option>
+				<option>17</option>
+				<option>18</option>
+				<option>19</option>
+				<option>20</option>
+				<option>21</option>
+				<option>22</option>
+				<option>23</option>
+				<option>24</option>
+				<option>25</option>
+				<option>26</option>
+				<option>27</option>
+				<option>28</option>
+				<option>29</option>
+				<option>30</option>
+				</select></td>
+			</tr>
+			<tr>
+				
+                                <td>Number Of Passenger</td>
+				<td>:</td>
+				<td></td>
+							
+			</tr>
+			<tr>
+                                <td>Adult</td>
+				<td>: <select name="a">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				</select></td>
+				<td>Child</td>
+				<td>: <select name="c">
+				<option>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				</select></td>		
+			</tr>
+			<tr>
+                                <td>Class Of Service</td>
+				<td>:<select name="cs">
+				<option>Please Select</option>
+				<option>Economy</option>
+				<option>Executive</option>
+				</select></td>
+				
+			</tr>
+			<tr>
+			<td align="center" colspan=7><input type="button" value="Book Now" onclick="book()"><input type="reset" value="Cancel"></td>
+			</tr>
+		</table>
+		</td>		
+</tr>
+</table>
+<table border=1 width="100%">
+<tr>
+		<td>
+		<table align="center">
+			<tr>
+				<td align="center" colspan=7><font face="Andalus" size=4>Domestic Flight Plan</font></td>
+			</tr>
+			<tr>
+				<td>Type of Journey</td>
+				<td>:</td>
+				<td><input type="text" name="itj"></td>
+			</tr>
+			<tr>
+				<td>Departure City</td>
+				<td>:</td>
+				<td><input type="text" name="idc"></td>
+			</tr>
+			<tr>
+				<td>Departure date</td>
+				<td>:</td>
+				<td><input type="text" name="idd" size=5>June 2010</td>
+			</tr>
+			<tr>
+				<td>Arrival City </td>
+				<td>:</td>
+				<td><input type="text" name="iac"></td>
+			</tr>
+			<tr>
+				<td>Return Date</td>
+				<td>:</td>
+				<td><input type="text" name="ird" size=5>June 2010</td>
+			</tr>
+			<tr>
+				<td>Adult</td>
+				<td>:</td>
+				<td><input type="text" name="ia"></td>
+			</tr>
+			<tr>
+				<td>Child</td>
+				<td>:</td>
+				<td><input type="text" name="ic"></td>
+			</tr>
+			<tr>
+				<td>Class Of Service</td>
+				<td>:</td>
+				<td><input type="text" name="ics"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan=7>
+			Your Verification Code<br>(Remember this code to check your booking status)<br>
+				<input type="text" name="get" size=30></td>
+			</tr>
+		</table>
+		</td>
+		
+</tr>
+</table>
+<br>
+</form>
+<script language="javascript">
+function book()
+{
+if (document.booking.tj[0].checked==true)
+{
+toj="One Way";
+}
+else if (document.booking.tj[1].checked==true)
+{
+toj="Return";
+}
+else
+{
+alert("You have to enter your account");
+}
+document.booking.itj.value=toj;
+
+var dcity=(document.booking.dc.value);
+document.booking.idc.value=dcity;
+
+var ddate=(document.booking.dd.value);
+document.booking.idd.value=ddate;
+
+var rcity=(document.booking.ac.value);
+document.booking.iac.value=rcity;
+
+var rdate=(document.booking.rd.value);
+document.booking.ird.value=rdate;
+
+var adult=(document.booking.a.value);
+document.booking.ia.value=adult;
+
+var child=(document.booking.c.value);
+document.booking.ic.value=child;
+
+var class1=(document.booking.cs.value);
+document.booking.ics.value=class1;
+
+var child=(document.booking.c.value);
+var class2=(document.booking.cs.value);
+if ((class2=="Executive") && (child>1))
+{
+service=10109371;
+}
+else if ((class2=="Executive") && (child<=1))
+{
+service=051191;
+}
+else if ((class2=="Economy") && (child>1))
+{
+service=17390101;
+}
+else if ((class2=="Economy") && (child<=1))
+{
+service=191150;
+}
+else
+{
+service="-"
+}
+document.booking.get.value=service;
+}
+
+</script>
+</body>
+</html>
